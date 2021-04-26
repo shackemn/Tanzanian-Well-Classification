@@ -14,20 +14,24 @@ We will be trying to detect which key features will help up identify the status 
 
 ### The Data
 
-Data comes from waterpoints all across Tanzania
+Data comes from waterpoints all across Tanzania.
 
-60,000 different waterpoints are included and are classified into “functioning”, “non functioning”, and “needs maintenance”
+60,000 different waterpoints are included and are classified into “functioning”, “non functioning”, and “needs maintenance”.
 
 Data includes many different features of the wells including geographic location, water source, water quality, pump type, construction year, etc.
 
 
 
 
-### Exploration
-Taking a closer look at the data, We classified our features into continuous and categorical features. Then we looked at visualizations
-to explore their linear relationship to price. We also looked at multicolinearity and removed  few features which would cause problems with our model.
+### Data Cleaning and Exploration
 
-Something noteworthy found was the mean sales price of waterfront homes was over three times greater than the average mean price of other homes. This can be observed in the visualization below.
+We filled in missing values, and got rid of duplicated rows.
+
+A lot of our features had over-lapping and sometimes even identical data. We dropped these extra features along with others that were not important for our models.
+
+We binned together some of the data for our categorical features, and we got rid of outliers for our continuous features. 
+
+During our exploration we found that location was an indicator of the status of the wells.
 
 ![Location Map.png](https://github.com/shackemn/Tanzanian-Well-Classification/blob/main/Location%20Map.png)
 

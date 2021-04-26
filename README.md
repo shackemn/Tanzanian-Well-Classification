@@ -20,17 +20,6 @@ Data comes from waterpoints all across Tanzania
 
 Data includes many different features of the wells including geographic location, water source, water quality, pump type, construction year, etc.
 
-### Data Cleaning and Exploration
-
-Filled in missing values and got rid of duplicate rows.  
-
-We had a lot of features with over-lapping and sometimes identical data. We removed these along with other columns that were uniportant to our models.
-
-We binned together a lot of the data in the categorical features to improve our model. We also got rid of any outliers in the continuos data. 
-
-In our exploration, we found that locationw as an important factor in the status of the wells.
-
-![Price by Location.png](https://github.com/shackemn/dsc-phase-2-project/blob/main/Price%20by%20Location.png)
 
 
 
